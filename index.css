@@ -1,0 +1,511 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+}
+#preloader {
+    position: fixed;
+    background: rgb(0, 0, 0) url('https://ankitchoudhary-vcf.github.io/LGMVIP-WebDev-Task-1/assets/img/preloder.gif') no-repeat center center;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+.main-container{
+    height:auto;
+    width:100%;
+    background-color: transparent;
+    display: flex;
+   flex-direction: column; 
+ 
+}
+.header{
+ height: 35rem;
+ display: flex;
+
+}
+.caraousel-container{
+    background-color: transparent;
+    width:100%;
+    height:35rem;
+    display: flex;
+    justify-content: center;
+}
+
+.caraousel-item{
+    width: 100%;
+    height:35rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+.caraousel-item img{
+  width: 100%;
+  height:35rem;
+  position: absolute;
+}
+.main-navbar{
+    width: 100%;
+    height:5rem;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+.navbar{
+    height:5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1480px;
+    min-width:100px;
+    margin: auto;
+}
+.logo{
+    background-color: transparent;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: larger;
+    color: white;
+}
+.nav-items{
+    background-color: transparent;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: larger;
+}
+.nav-items a{
+    margin-inline-start:50px;
+    text-decoration: none;
+    color: white;
+}
+.nav-items a:hover{
+    cursor: pointer;
+}
+.caraousel-content{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    position: absolute;
+    background-color: transparent;
+    width:50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.prev,.next{
+    position: absolute;
+    width:50px;
+    height:50px;
+     transform:translateY(250px);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    transition:  2s ease;
+}
+.prev:hover,.next:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.next{
+    right:0;
+}
+.prev{
+    left:0;
+}
+.dots{
+    width:150px;
+    height:15px;
+    background-color: transparent;
+    position: absolute;
+    transform: translateY(500px);
+    display: flex;
+    margin: auto;
+    
+}
+.dot{
+    width:15px;
+    height:12px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin-inline-end: 20px;
+}
+.dot:hover{
+    background-color: orangered;
+}
+.dot.active{
+    background-color: orangered;
+}
+.about-section,.project-section,.pricing-table-section,.team-section,.newsletter-section,.blog-section,.contact-section,.footer-section{
+    height:auto;
+    width:100%;
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+}
+.newsletter-section{
+    background-image: url('https://images.unsplash.com/photo-1431102996501-f6379b157668?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contact-container{
+    height:40rem; 
+   width:80%;
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif; 
+}
+.footer-container{
+    height:15rem; 
+    width:80%;
+    margin: auto;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   font-family: sans-serif; 
+    padding: 10px;
+}
+
+.blog-container{
+    height:40rem; 
+   width:80%;
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+.about-container{
+   height:50rem; 
+   width:80%;
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+.pricing-table-container,.newsletter-container{
+    width:90%;
+    height:40rem; 
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.newsletter-container{
+    height:20rem; 
+    justify-content: space-evenly;
+}
+.newsletter-container h1{
+    color: white;
+}
+.newsletter-signup{
+    width:50%;
+    height:10rem;
+    display: flex;
+    background-color: transparent;
+    padding:2px;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-signup input{
+    width:70%;
+    height:2rem;
+}
+.newsletter-signup button{
+    width:30%;
+    height:2.3rem;
+    outline: none;
+    border: none;
+    color:black;
+    font-weight: bold;
+    background-color: #f1de71;
+}
+.team-container{
+    width:90%;
+    height:60rem; 
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+.project-container{
+    width:95%;
+    height:65rem; 
+   margin: auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+.about-description{
+    width:80%;
+    height:20rem;
+    background-color: transparent;
+    display: flex;
+}
+.contact{
+    width:70%;
+    height:inherit;
+    background-color:transparent ;
+    display: flex;
+}
+.quick-links{
+    width:30%;
+    height:inherit;
+    background-color:transparent ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.quick-links a{
+    margin-block-start: 6px;
+    color: black;
+}
+.office-address,.contact-us{
+    width:50%;
+    height:10rem;
+    background-color:transparent ;
+    padding: 5px;
+}
+.contact-details{
+    width:80%;
+    height:30rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.blog-description{
+    width:90%;
+    height:35rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.team-member{
+    width:80%;
+    height:50rem;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-description-section{
+    width:90%;
+    height:60rem;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-data{
+    width:50%;
+    height:10rem;
+    background-color: #f1de71;;
+    display: flex;
+    flex-direction: column; 
+    padding:10px;
+}
+.form-data input{
+   
+    height:2rem;
+    margin-block-start: 6px;
+}
+.form-data textarea{
+    height:5rem;
+    margin-block-start: 6px;
+}
+.form-data button{
+    height:2rem;
+    font-weight: bold;
+    background-color: gainsboro;
+    margin-block-start: 6px;
+    border: none;
+}
+.blog-card{
+    width:25%;
+    height:25rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.blog-card h3,h4,p{
+    margin:4px;
+}
+.blog-card-image{
+    height:10rem;
+    width:100%;
+    background-color: transparent;
+    display: flex;
+}
+.blog-card-image img{
+    width:100%;
+    height:inherit;
+    background-color: transparent;
+}
+.project-card{
+    width:25%;
+    height:28rem;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pricing-card,.member{
+    width:18%;
+    height:20rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.member{
+    width:16%;
+    height:15rem; 
+    margin-block-end:4rem;
+}
+.member-image img{
+    border-radius: 50%;
+}
+.pricing-card h4,h5,h6{
+    margin:10px;
+    padding: 0;
+}
+.pricing-table-desc{
+    width:90%;
+    height:35rem;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.about-blogs{
+    width:80%;
+    height:22rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-content{
+  height:15rem;
+  width:60%;
+  background-color: transparent;
+  font-weight: bold;
+}
+.about-pic{
+    height:15rem;
+    width:40%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+.project-image{
+    height:10rem;
+    width:100%;
+    background-color: transparent;
+    display: flex;
+}
+.project-image img{
+    height:10rem;
+    width:100%;
+}
+.about-pic img{
+    height:15rem;
+    width:60%;
+}
+.blog{
+  width:28%;
+  height:22rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.blog-image{
+    width:50%;
+    height:5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.blog-image img{
+    width:50%;
+    height:4rem;
+    background-color: transparent;
+}
+.blog-content p{
+    padding: 5px;
+    color: gray;
+}
+.blog-button button,.project-button button{
+    border: none;
+    outline: none;
+    background: rgb(150, 8, 168);
+    height:2rem;
+    width:6rem;
+    font-weight: bolder;
+    color:white;
+}
+.project-button button{
+    background: blue;
+    height:2rem;
+    width:inherit;
+}
+.pricing-button button,.blog-card-button button{
+    background: skyblue;
+    height:2rem;
+    width:inherit;
+}
+.project-button,.pricing-button,.blog-card-button{
+    width:95%;
+}
+.social-media-icons a{
+    text-decoration: none;
+    color: blue;
+}
+.social-media-icons{
+   margin-block-start:10px;
+}
+.social-media-icons a:hover{
+   background-color: gainsboro;
+}
+
+
