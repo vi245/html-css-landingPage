@@ -2,13 +2,18 @@ var item1=document.getElementsByClassName('caraousel-item');
 var dots=document.getElementsByClassName('dot');
 var dot=document.querySelector('.dots');
 const arrayOfDots=Array.from(dot.children);
-console.log(arrayOfDots);
-console.log(dots);
+const videos=document.querySelector('.video-caraousel-container');
+const arrayOfVideos=Array.from(videos.children);
+console.log(arrayOfVideos);
+//console.log(arrayOfDots);
+//console.log(dots);
 window.onload=()=>{
+    var counter=0;
     document.getElementById('preloader').style.display='none';
     document.querySelector('.main-container').style.display='flex';
-    var counter=0;
+    
     setInterval(function(){
+        
         for(let i=0;i<item1.length;i++)
         {
             item1[i].style.display="none";
@@ -20,6 +25,36 @@ window.onload=()=>{
         if(counter>2)
         {
             counter=0;
+        }
+    },5000)
+    var k=1;
+    setInterval(function(){
+        
+        arrayOfVideos[0].childNodes[1].src=`./assets/demo${k}.mp4`;
+        k++;
+        if(k>3)
+        {
+            k=1;
+        }
+    },5000)
+    var j=2;
+    setInterval(function(){
+        
+        arrayOfVideos[1].childNodes[1].src=`./assets/demo${j}.mp4`;
+        j++;
+        if(j>3)
+        {
+            j=1;
+        }
+    },5000)
+    var i=3;
+    setInterval(function(){
+       
+        arrayOfVideos[2].childNodes[1].src=`./assets/demo${i}.mp4`;
+        i++;
+        if(i>3)
+        {
+            i=1;
         }
     },5000)
 }

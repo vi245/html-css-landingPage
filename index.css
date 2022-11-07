@@ -149,7 +149,7 @@ body{
 .dot.active{
     background-color: orangered;
 }
-.about-section,.project-section,.pricing-table-section,.team-section,.newsletter-section,.blog-section,.contact-section,.footer-section{
+.about-section,.project-section,.pricing-table-section,.team-section,.newsletter-section,.blog-section,.contact-section,.footer-section,.video-section{
     height:auto;
     width:100%;
     background-color: transparent;
@@ -161,6 +161,9 @@ body{
     background-size: cover;
     background-position: center;
 }
+.video-section{
+    background-color: #b517d4;;
+}
 .contact-container{
     height:40rem; 
    width:80%;
@@ -170,6 +173,16 @@ body{
   flex-direction: column;
   align-items: center;
   font-family: sans-serif; 
+}
+.video-container{
+    height:30rem; 
+    width:80%;
+    margin: auto;
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: sans-serif; 
 }
 .footer-container{
     height:15rem; 
@@ -308,6 +321,30 @@ body{
     display: flex;
     justify-content: space-around;
 }
+.video-caraousel-container{
+    width:90%;
+    height:40rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+.video-caraousel-item{
+    width:35%;
+    height:25rem;
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+}
+.center-item{
+    height:20rem;
+}
+.caraousel-video{
+    width:100%;
+    height:inherit;
+    background-color: transparent;
+    display: flex;
+}
+
 .team-member{
     width:80%;
     height:50rem;
